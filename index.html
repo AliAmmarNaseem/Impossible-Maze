@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impossible Maze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="game-header">
+            <h1>Impossible Maze</h1>
+            <div id="stats">
+                <span>Level: <span id="level">1</span></span>
+                <span>Deaths: <span id="death-counter">0</span></span>
+                <span>Time: <span id="timer">0</span>s</span>
+            </div>
+            <div id="instructions">
+                <p>Get to the green goal without touching any red walls or obstacles!</p>
+                <p>Use arrow keys or WASD to move.</p>
+                <button id="start-button">Start Game</button>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <p>You died <span id="final-deaths">0</span> times.</p>
+            <button id="retry-button">Try Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
